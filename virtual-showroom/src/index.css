@@ -1,0 +1,30 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+body {
+  margin: 0;
+  overflow: hidden;
+  font-family: 'Inter', system-ui, sans-serif;
+}
+
+.canvas-container {
+  width: 100vw;
+  height: 100vh;
+}
+
+/* Estilo premium para el modal */
+.modal {
+  animation: modalPop 0.4s cubic-bezier(0.23, 1, 0.32, 1);
+}
+
+@keyframes modalPop {
+  from {
+    opacity: 0;
+    transform: translate(-50%, -50%) scale(0.92);
+  }
+  to {
+    opacity: 1;
+    transform: translate(-50%, -50%) scale(1);
+  }
+}
